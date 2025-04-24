@@ -1,0 +1,112 @@
+/* Estilo para o calendário */
+.table td, .table th {
+  text-align: center;
+}
+.hoje {
+  background-color: #d1ecf1;
+  font-weight: bold;
+}
+.domingo {
+  color: red;
+  font-weight: bold;
+}
+.sabado {
+  color: lightblue;
+  font-weight: bold;
+}
+.btn{
+  width: 16rem;
+}
+.table-responsive{
+  max-width: 50rem !important;
+  margin: 0 auto !important;
+}
+.hora{
+  font-size: 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  max-width: 50rem;
+  margin: 0 auto 20px auto;
+}
+/* Classes de cores baseadas no período do dia */
+.bom-dia {
+  background-color: lightgreen;
+  color: darkgreen;
+}
+.boa-tarde {
+  background-color: rgb(255, 208, 150);
+  color: darkorange;
+}
+.boa-noite {
+  background-color: lightgray;
+  color: rgb(59, 59, 59);
+}
+
+@media (max-width: 768px) {
+  .table thead th {
+      font-size: 0.75rem;
+  }
+  .table td {
+      font-size: 0.75rem;
+  }
+  .table th {
+      font-size: 0.75rem;
+  }
+  .btn{
+    margin-top: 10px;
+    width: 25.7rem;
+  }
+  .hora{
+    font-size: 18px;
+  }
+  .justify-content-center, label{
+    justify-content: left !important;
+    padding: .375rem .80rem;
+  }
+  .justify-content-center{
+    /* justify-content: left !important; */
+    padding: .375rem 0rem;
+  }
+  .btn{
+    width: 100%;
+    /* margin-right: 0 !important; */
+  }
+  .mr-2, .mx-2{
+    margin-right: 0 !important;
+  }
+  #year{
+    width: 16.85rem;
+
+  }
+}
+@media (max-width: 480px) {
+  .btn{
+    width: 100%;
+    /* margin-right: 0 !important; */
+  }
+  #year{
+    width: 100%;
+  
+  }
+  .mr-2, .mx-2{
+    margin-right: 0 !important;
+  }
+  .hora{
+    font-size: 16px;
+  }
+  .justify-content-center, label{
+    justify-content: left !important;
+    padding: .375rem .80rem;
+  }
+  .justify-content-center{
+    /* justify-content: left !important; */
+    padding: .375rem 0rem;
+  }
+
+}
+@media (max-width: 575px) {
+
+  #year{
+    width: 100%;
+  
+  }
+}
